@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Dog</title>
+    </head>
+    <body> 
+            <div class="container">
+
+                <nav id="link-header">
+                    <a class="headerText" href="./our_staff.html">Our Staff</a>
+                    <a class="headerText" href="#our_locations">Contact Us</a>
+                </nav>
+
+                <section id="website-title">
+                    <h1>Star City Grooming</h1>
+                </section>
+
+                <section id="our_work">
+                    <div class="slideshow-container">
+        
+                        <!-- Slideshow container -->
+                            <!-- Full-width images with number and caption text -->
+                            <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="./images/daphne.jpg">
+                            <div class="text">Dye job Daphne</div>
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="./images/baby_cat.jpg">
+                            <div class="text">Baby Cat</div>
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="./images/baby_dog.jpg">
+                            <div class="text">Baby Dog</div>
+                    </div>                   
+                </section>
+
+                <section id="book_appointment">
+                    <button class="button" onclick="openForm()">Request An Appointment</button>
+                </section>
+
+                <section id="our_process">
+
+                    <div class="grid_process">
+                        <div id="nail-trim">
+                            <div class="iconPictures"><img src='images/nailfile.png'/></div>
+                                <div class="processTitleText"><h1>Nail Trim</h1>
+                                    <p>Come in for a nail trim to take care of those sharp claws.</p>
+                                </div>
+                        
+                        </div>
+                        <hr>
+    
+                        <div id="bath">
+                            <div class="iconPictures"><img src='images/bathtub.png'/></div>
+                                <div class="processTitleText"><h1>Clean Your Dog</h1>
+                                    <p>We will wash your dog from nose to paw and clean out all those nasty bits.</p>
+                                </div>
+                    
+                        </div>
+                        <hr>
+
+                        <div id="haircut">
+                            <div class="iconPictures"><img src='images/scissors.png'/></div>
+                                <div class="processTitleText"><h1>Hair Cut</h1>
+                                    <p>We will give you whatever haircut you wish for you dog.</p>
+                                </div>
+
+                        </div>
+
+                        <p id="disclaim-text">prices dependent on breed of animal. Please give us a <a id='call-us' href="#our_locations"> call.</a></p>
+                                               
+                </section> 
+
+                <br> 
+                <section id="our_locations">
+                    <h1>Our Locations</h1>
+                    <a class="links" href="https://goo.gl/maps/PgUHSf4vinViyeMv7"><h3>Pampered Purrfection</h3></a>
+                    <p>3327 Melrose Ave NW, Roanoke, VA 24017</p> 
+                    <a class="links" href="https://goo.gl/maps/VqbAkHJWycinhHfb7"><h3>Star City Bark Avenue</h3></a>
+                    <p>703 Townside Rd SW, Roanoke, VA 24014</p>
+                    <a class="links" href="https://goo.gl/maps/RwMoD7zq6Mp8BGge9"><h3>Rovers Retreat</h3></a>
+                    <p>850 Roanoke Rd, Daleville, VA 24083</p>
+                </section>
+
+                <div class="form-popup" id="myForm">
+                    <form action="form-to-email.php" name="myemailform" class="form-container" method="post">
+                      <h2>Appointment Request</h2>
+    
+                      <label for="groomer-choice"><b>Preferred Groomer</b></label>
+                      <select name="groomer" id="groomer">
+                        <option>No Preference</option>
+                        <option>Olivia</option>
+                        <option>Chauna</option>
+                        <option>Kim</option>
+                        <option>Tabatha</option>
+                      </select>
+                      <br>
+    
+                      <label for="appointment-time"><b>Appointment Time</b></label>
+                      <select name="appointment" id="appointment">
+                        <option>8:00 am</option>
+                        <option>8:30 am</option>
+                        <option>9:00 am</option>
+                        <option>9:30 am</option>
+                        <option>10:00 am</option>
+                        <option>12:00 pm</option>
+                        <option>2:00 pm</option>
+                        <option>3:00 pm</option>
+                      </select>
+                      <br>
+                      <br>
+                      <label for="first-name"><b>First Name</b></label>
+                      <input type="text" placeholder="Enter First Name" name="first-name" required>
+    
+                      <label for="last-name"><b>Last Name</b></label>
+                      <input type="text" placeholder="Enter Last Name" name="last-name" required>
+    
+                      <label for="pets-name"><b>Pets Name</b></label>
+                      <input type="text" placeholder="Enter Pets Name" name="pets-name" required>
+
+                      <label for="pets-breed"><b>Breed</b></label>
+                      <input type="text" placeholder="Enter Pets Breed" name="pets-breed" required>
+    
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" 
+                      required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> 
+                  
+                      <button type="submit" class="btn">Submit</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                  </div>
+                <footer>
+                    Copyright 2022
+                </footer>
+    
+            </div> 
+        <script src="./script.js"></script>
+        <script type="css/javascript">
+        </script>
+    </body>
+</html>

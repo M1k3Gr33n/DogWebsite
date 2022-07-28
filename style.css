@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+} 
+
+body {
+  margin: 0;
+  height:100%;
+  background-color: rgb(54, 7, 58);
+}
+
+a {
+  text-decoration: none;
+  color:orange;
+  transition: 1s;
+}
+a:hover {
+  color:rgb(223, 122, 0);
+  transform:translateY(3px);
+}
+
+p {
+  color:wheat;
+}
+
+li {
+  display:block;
+  padding-top: 5%;
+  font-weight: lighter;
+  color:rgb(201, 201, 201);
+}
+
+img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+span {
+  padding-right: 20px;
+}
+
+section {
+  display:block;
+}
+
+hr {
+  visibility: hidden;
+}
+
+footer {
+  left:0;
+  bottom:0;
+  width:100%;
+  position:static;
+}
+
+/* classes */
+.container {
+  display:flex;
+  flex-direction: column;
+}
+
+.button {
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(252, 101, 0);
+  border: 3px solid #ff933b;
+  color:whitesmoke;
+  font-weight: bolder;
+  height:50px;
+  width:200px; 
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  box-shadow: inset 0 0 0 5px #e65400;
+}
+
+.grid_process {
+  display:flex;
+  flex-direction: column;
+}
+
+.processTitleText, .headerText {
+  color:aliceblue;
+  font-weight: bold;
+  padding-left:30px;
+}
+
+.headerText {
+  transition: 1s;
+}
+
+.headerText:hover {
+  color: #f7c375;
+  transform:translateY(5px);
+}
+
+.links:hover {
+  transform:rotate(1deg);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  display:flex;
+  flex-direction: column;
+  z-index: 900;
+  overflow: hidden;
+  max-width: 1000px;
+  position:relative;
+  margin: auto;
+  width: 800px;
+  height:400px;
+}
+
+.mySlides {
+  display:block;
+  width: 100%;
+  height:100%;
+
+}
+.numbertext {
+  position: absolute;
+  padding: 5px 90px;
+}
+
+.text {
+  color:white;
+  font-size: 15px;
+  padding: 8px 60px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.iconPictures {
+  display:flex;
+  height:40px;
+  width:40px;
+  margin-top:30px;
+}
+
+.iconPictures:hover {
+  transform:rotate(5deg);
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #dd8500;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-image: linear-gradient(rgb(255, 153, 0), rgb(255, 166, 0)75%);
+  color:white;
+  font-weight: bold;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width: 100%;
+  padding: 5px;
+  margin: 1px 0 15px 0;
+  border: none;
+  background: #ffb45d;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus {
+  background-color: rgb(206, 110, 0);
+  outline: none;
+}
+
+/* Set a style for the submit */
+.form-container .btn {
+  background-color: #018d5a;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(185, 3, 3);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 10;
+}
+
+
+/* ids */
+
+#link-header {
+  display:flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  z-index: 1000;
+  height: 50px;
+  padding-top: 5px;
+  padding-right: 5px;
+  width:100%;
+  background-color:rgb(228, 137, 0);
+  border: 3px solid rgb(238, 150, 18);
+}
+
+#website-title {
+  display: flex;
+  padding-top:50px;
+  color:rgb(255, 227, 168);
+  background-image: linear-gradient(rgb(95,0,95) 25%,purple 75%);
+  font-size:40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  justify-content: center;
+}
+
+#our_staff {
+  display:flex;
+  flex-direction: column;
+  height:100px;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(purple 25%,rgb(95,0,95));
+}
+
+#book_appointment {
+  display:flex;
+  padding-top:50px;
+  height:150px;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+}
+
+#our_process_header {
+  padding-top:10px;
+  z-index:1000;
+  color:whitesmoke;
+  background-color:purple;
+  font-size:30px;
+  font-weight: bolder;
+}
+
+#our_process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(purple 75%,rgb(95,0,95));
+  color:whitesmoke;
+  height:450px;
+}
+
+#nail-trim, #bath, #haircut {
+  width:600px;
+  padding-left:60px;
+  display:flex;
+}
+
+#disclaim-text {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  font-style: italic;
+  padding-left:40px;
+}
+
+#call-us {
+  margin-left: 10px;
+}
+
+#slideshow_header {
+  display:flex;
+  color:whitesmoke;
+  font-size:30px;
+  font-weight: bolder;
+  background-color: purple;
+  padding-bottom:10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#our_work {
+  display:flex;
+  background-color: purple;
+  justify-content: center;
+  height:400px;
+}
+
+#groomers, #bathers {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgb(95,0,95), purple, rgb(95,0,95));
+  height:400px;
+}
+
+.groomerBio, .batherBio {
+  display:flex;
+  width:100%;
+  outline: 2px dotted red;
+}
+
+#our_locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  background-image: linear-gradient(purple 25%,rgb(95,0,95));
+  height:400px;
+}
+
+#our_groomers, #our_bathers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:600px;
+  outline: 2px dotted red;
+}
